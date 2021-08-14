@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="settings/settings.css">
+		<script type="text/javascript" src="mod/mod.js"></script>
+        <title>Limitless Settings</title>
+    </head>
+    <body>
+	<h1>Limitless Settings</h1>
+	
+	<h2>Addons</h2>
+	
+	<input type="checkbox" id="swatches" name="swatches" value="swatches">
+	<label for="swatches">Color Swatches</label><br>
+	
+	<h2>Other Additions</h2>
+	
+	<input type="checkbox" id="fonts" name="fonts" value="fonts">
+	<label for="fonts">Custom Fonts</label><br>
+	
+	<input type="checkbox" id="ctrlrotate" name="ctrlrotate" value="ctrlrotate">
+	<label for="ctrlrotate">Ctrl+Rotate</label><br>
+	
+	<input type="checkbox" id="shiftpoints" name="shiftpoints" value="shiftpoints">
+	<label for="shiftpoints">Shift+Arrows for Points</label><br>
+	
+	<h2>Removed Limits</h2>
+	
+	<input type="checkbox" id="nocanvasbounds" name="nocanvasbounds" value="nocanvasbounds">
+	<label for="nocanvasbounds">Larger Canvas Bounds</label><br>
+	
+	<h2>Misc</h2>
+	
+	<input type="color" id="defaultcolor" name="defaultcolor" value="#000000">
+	<label for="defaultcolor">Default Color</label><br>
+	
+	<input type="checkbox" id="nopasteoffset" name="nopasteoffset" value="nopasteoffset">
+	<label for="nopasteoffset">No Paste Offset</label><br>
+	
+	<input type="number" id="zoomfactor" name="zoomfactor" value="zoomfactor" min="100" max="10000">
+	<label for="zoomfactor">Zoom Factor</label><br>
+	
+	<br><br>
+	
+	<button onclick="if (save(true)){exit();}">Save &amp; Exit</button><button id="savebutton" onclick="save(false);">Save</button><button onclick="exit();">Exit</button>
+	
+	<script type="text/javascript" src="settings/settings.js"></script>
+	
+	</body>
+</html>

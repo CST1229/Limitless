@@ -1,0 +1,79 @@
+/* File for extra styling for stuff */
+
+/* Hide scrollbars */
+div[class*="paint-editor_canvas-container"] {
+	overflow: hidden !important;
+}
+div[class*="scrollable-canvas_horizontal-scrollbar-wrapper"], div[class*="scrollable-canvas_vertical-scrollbar-wrapper"] {
+	display: none;
+}
+
+/* Fix width */
+div[class*="playground_playgroundContainer"] {
+	width: calc(100% - 30px) !important;
+}
+div[class*="paint-editor_editor-container"] {
+	padding: 10px 0px !important;
+}
+
+/* Upload and Download buttons */
+button[class*="playground_playgroundButton"] {
+	border-radius: 5px;
+	background-color: #4C97FF;
+	padding: .25rem;
+	line-height: 1.5rem;
+	font-size: calc(3 * .25rem);
+	font-weight: bold;
+	color: white;
+	border: none;
+	position: relative;
+	bottom: 48px;
+	cursor: pointer;
+}
+/* Size boxes */
+div[class*="input-group_input-group"] {
+	margin-left: 2px !important;
+}
+div[class*="input-group_input-group"]:first-child {
+	margin-right: 1rem;
+}
+div[class*="input-group_input-group"]+div>input[class*="input_input-small-range"] {
+	padding: 0 0.75rem 0 0;
+	border-radius: 0 2rem 2rem 0;
+	position: relative;
+	top: 1px;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+}
+div[class*="color-button_color-button-arrow"] {
+	border-radius: 0px !important;
+}
+
+/* Fonts */
+@font-face {
+	font-family: "Sans Serif";
+	src: url("../fonts/Noto Sans Medium.ttf");
+}
+@font-face {
+	font-family: "Serif";
+	src: url("../fonts/Source Serif Pro.ttf");
+}
+@font-face {
+	font-family: "Handwriting";
+	src: url("../fonts/Handlee.ttf");
+}
+@font-face {
+	font-family: "Marker";
+	src: url("../fonts/Knewave.ttf");
+}
+@font-face {
+	font-family: "Curly";
+	src: url("../fonts/Griffy.ttf");
+}
+@font-face {
+	font-family: "Pixel";
+	src: url("../fonts/Grand9K Pixel.ttf");
+}
+@font-face {
+	font-family: "Minecraft";
+	src: url("../fonts/Minecraft.otf");
+}
