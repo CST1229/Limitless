@@ -13,7 +13,8 @@ window.paintmod.settings.defaults = {
 	zoomfactor: 1500,
 	ctrlrotate: true,
 	shiftpoints: true,
-	swatches: true
+	swatches: true,
+	darkmode: false
 }
 //All settings
 window.paintmod.settings.all = [
@@ -24,7 +25,8 @@ window.paintmod.settings.all = [
 	"zoomfactor",
 	"ctrlrotate",
 	"shiftpoints",
-	"swatches"
+	"swatches",
+	"darkmode"
 ]
 //Set settings
 try {

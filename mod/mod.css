@@ -7,6 +7,9 @@ div[class*="paint-editor_canvas-container"] {
 div[class*="scrollable-canvas_horizontal-scrollbar-wrapper"], div[class*="scrollable-canvas_vertical-scrollbar-wrapper"] {
 	display: none;
 }
+body {
+	overflow: hidden;
+}
 
 /* Fix width */
 div[class*="playground_playgroundContainer"] {
@@ -27,7 +30,7 @@ button[class*="playground_playgroundButton"] {
 	color: white;
 	border: none;
 	position: relative;
-	bottom: 48px;
+	bottom: 50px;
 	cursor: pointer;
 }
 /* Size boxes */
@@ -42,11 +45,17 @@ div[class*="input-group_input-group"]+div>input[class*="input_input-small-range"
 	border-radius: 0 2rem 2rem 0;
 	position: relative;
 	top: 1px;
-	border: 1px solid rgba(0, 0, 0, 0.25);
+	z-index: -1;
 }
 div[class*="color-button_color-button-arrow"] {
 	border-radius: 0px !important;
 }
+
+/* Fix popover  */
+.Popover {
+	z-index: 100;
+}
+
 
 /* Fonts */
 @font-face {
