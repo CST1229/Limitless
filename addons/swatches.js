@@ -182,7 +182,7 @@ if (window.paintmod.settings.swatches==="true") {
 	let createAllSwatches = function() {
 		setTimeout(function() {
 			document.querySelectorAll(".Popover-body").forEach(element => createSwatches(element));
-		}, 10)
+		}, 20)
 	};
 
 	document.querySelectorAll('label[class*="label_input-group"] > div[class*="color-button_color-button"]')[0].addEventListener("click", createAllSwatches);
