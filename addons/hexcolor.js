@@ -132,6 +132,8 @@ if (window.paintmod.settings.hexcolor==="true") {
 		popover.querySelectorAll('div[class*="slider_container"]').forEach(e => e.addEventListener("mouseup", function(){onSliderChange(popover)}));
 		popover.querySelectorAll('*[class*="color-picker_clickable"], div[class*="slider_container"]').forEach(e => e.addEventListener("click", function(){onSliderChange(popover)}));
 		onSliderChange(popover);
+		//Refresh when clicked on just to be sure
+		hexColorInput.addEventListener("focus", function(){onSliderChange(popover)});
 		
 		//Gradient picker events
 		popover.querySelectorAll('div[class*="color-picker_gradient-picker-row"] > img').forEach(
