@@ -19,6 +19,12 @@ div[class*="paint-editor_editor-container"] {
 	padding: 10px 0px !important;
 }
 
+/* Font dropdown */
+div[class*="font-dropdown_font-dropdown"] {
+	height: 1.8rem;
+}
+
+
 /* Upload and Download buttons */
 button[class*="playground_playgroundButton"] {
 	border-radius: 5px;
@@ -45,7 +51,7 @@ div[class*="input-group_input-group"]+div>input[class*="input_input-small-range"
 	border-radius: 0 2rem 2rem 0;
 	position: relative;
 	top: 1px;
-	z-index: -1;
+	left: 1px;
 }
 div[class*="color-button_color-button-arrow"] {
 	border-radius: 0px !important;

@@ -10,7 +10,7 @@
     <body>
 	<h1>Limitless Settings</h1>
 	
-	Hover over an option for more details.
+	<span title="No, this is not an option!">Hover over an option for more details.</span>
 	
 	<h2>Addons</h2>
 	
@@ -20,16 +20,22 @@
 	<span title="Pretty self-explanatory."><input type="checkbox" id="darkmode" name="darkmode" value="darkmode">
 	<label for="darkmode">Dark Mode</label></span><br>
 	
+	<span title="Adds a hexadecimal color input to the color picker."><input type="checkbox" id="hexcolor" name="hexcolor" value="hexcolor">
+	<label for="hexcolor">Hex Color Picker (Beta)</label></span><br>
+	
 	<h2>Other Additions</h2>
 	
 	<span title="Adds 3 new fonts to the font picker: Code, Website and Minecraft."><input type="checkbox" id="fonts" name="fonts" value="fonts">
 	<label for="fonts">Custom Fonts</label></span><br>
 	
 	<span title="Allows you to hold Ctrl/Command while rotating to rotate in 22.5-degree increments."><input type="checkbox" id="ctrlrotate" name="ctrlrotate" value="ctrlrotate">
-	<label for="ctrlrotate">Ctrl+Rotate</label></span><br>
+	<label for="ctrlrotate">Ctrl+Rotate 22.5° Increments</label></span><br>
 	
 	<span title="Allows you to hold Shift while moving points with the arrows to move them further, much like shapes."><input type="checkbox" id="shiftpoints" name="shiftpoints" value="shiftpoints">
 	<label for="shiftpoints">Shift+Arrows for Points</label></span><br>
+	
+	<span title="Allows you to hold Ctrl while scaling a shape to snap it to round numbers. Based off of https://github.com/LLK/scratch-paint/pull/1156."><input type="checkbox" id="ctrlscale" name="ctrlscale" value="ctrlscale">
+	<label for="ctrlscale">Ctrl+Scale Snap to Multiples</label></span><br>
 	
 	<h2>Removed Limits</h2>
 	
@@ -46,6 +52,9 @@
 	
 	<span title="The higher this number is, the slower the zooming will be."><input type="number" id="zoomfactor" name="zoomfactor" value="zoomfactor" min="100" max="10000">
 	<label for="zoomfactor">Zoom Factor</label></span><br>
+	
+	<span title="Makes the Serif font actually display Source Serif Pro instead of the browser's default serif font. This also works when exported into vanilla Scratch, but the font will appear as &quot;Serif&quot; and will sometimes look like the vanilla (buggy) Serif font on the stage. Note that if enabled, text using the vanilla Serif font will behave like a hacked font, sometimes transforming into Sans Serif!"><input type="checkbox" id="fixserif" name="fixserif" value="fixserif">
+	<label for="fixserif">Fix Serif Font</label></span><br>
 	
 	<br><br>
 	

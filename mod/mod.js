@@ -14,7 +14,10 @@ window.paintmod.settings.defaults = {
 	ctrlrotate: true,
 	shiftpoints: true,
 	swatches: true,
-	darkmode: false
+	darkmode: false,
+	ctrlscale: true,
+	fixserif: false,
+	hexcolor: true
 }
 //All settings
 window.paintmod.settings.all = [
@@ -26,7 +29,10 @@ window.paintmod.settings.all = [
 	"ctrlrotate",
 	"shiftpoints",
 	"swatches",
-	"darkmode"
+	"darkmode",
+	"ctrlscale",
+	"fixserif",
+	"hexcolor"
 ]
 //Set settings
 try {

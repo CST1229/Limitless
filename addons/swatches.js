@@ -1,23 +1,6 @@
 //Adds color swatches to the paint editor
 //Code taken and modified from Customized (github.com/CodeGuy92/Customized)
 
-//Function for converting HSV to RGB, thanks stackoverflow (actually from gist.github.com/mjackson/5311256)
-//Slightly minified
-//Accepts HSV values from 0 to 100
-//Returns decimal RGB values from 0 to 255
-window.paintmod.HSVtoRGB = function(h, s, v) {var r, g, b, i, f, p, q, t;
-	
-	//Conversion
-	let clamp = function(x,a,b) {return Math.max(a,Math.min(x, b))} //Function for clamping
-	h = clamp(h,0,100) / 100;
-	s = clamp(s,0,100) / 100;
-	v = clamp(v,0,100) / 100;
-	
-	i = Math.floor(h * 6); f = h * 6 - i; p = v * (1 - s); q = v * (1 - f * s); t = v * (1 - (1 - f) * s);
-	switch (i % 6) { case 0: r = v, g = t, b = p; break; case 1: r = q, g = v, b = p; break; case 2: r = p, g = v, b = t; break; case 3: r = p, g = q, b = v; break; case 4: r = t, g = p, b = v; break; case 5: r = v, g = p, b = q; break;}
-	return { r: Math.round(r * 255), g: Math.round(g * 255), b: Math.round(b * 255)};
-}
-
 if (window.paintmod.settings.swatches==="true") {
 	
 	//Function for dragging sliders
@@ -86,7 +69,7 @@ if (window.paintmod.settings.swatches==="true") {
 		let swatch = document.createElement("span");
 		
 		//RGB colors for the swatch
-		let colors = window.paintmod.HSVtoRGB(color, saturation, brightness);
+		let colors = HSVtoRGB(color, saturation, brightness);
 		
 		swatch.classList.add("color-swatch");
 		swatch.classList.add("color-picker_clickable_1qAhZ");
@@ -202,6 +185,6 @@ if (window.paintmod.settings.swatches==="true") {
 		}, 10)
 	};
 
-	document.querySelectorAll('div[class*="color-button_color-button"]')[0].addEventListener("click", createAllSwatches);
-	document.querySelectorAll('div[class*="color-button_color-button"]')[1].addEventListener("click", createAllSwatches);
+	document.querySelectorAll('label[class*="label_input-group"] > div[class*="color-button_color-button"]')[0].addEventListener("click", createAllSwatches);
+	document.querySelectorAll('label[class*="label_input-group"] > div[class*="color-button_color-button"]')[1].addEventListener("click", createAllSwatches);
 }
