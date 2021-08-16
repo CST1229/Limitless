@@ -44,6 +44,9 @@
 	
 	<h2>Misc</h2>
 	
+	<span title="Makes the edges of created pointed outlines rounded instead of &quot;spiky&quot;, which fixes some &quot;thorns&quot; that appear on big outlines. Works when imported into vanilla, and outlines that were not rounded don't get rounded when enabled."><input type="checkbox" id="nomiter" name="nomiter" value="nomiter">
+	<label for="nomiter">Round Outlines</label></span><br>
+	
 	<span title="Pretty self-explanatory too. Default color for fill, not outline."><input type="color" id="defaultcolor" name="defaultcolor" value="#000000">
 	<label for="defaultcolor">Default Color</label></span><br>
 	
@@ -52,6 +55,9 @@
 	
 	<span title="The higher this number is, the slower the zooming will be."><input type="number" id="zoomfactor" name="zoomfactor" value="zoomfactor" min="100" max="10000">
 	<label for="zoomfactor">Zoom Factor</label></span><br>
+	
+	<h2>Incompatible</h2>
+	These features don't really play well with the vanilla paint editor. Use at your own risk!<br>
 	
 	<span title="Makes the Serif font actually display Source Serif Pro instead of the browser's default serif font. This also works when exported into vanilla Scratch, but the font will appear as &quot;Serif&quot; and will sometimes look like the vanilla (buggy) Serif font on the stage. Note that if enabled, text using the vanilla Serif font will behave like a hacked font, sometimes transforming into Sans Serif!"><input type="checkbox" id="fixserif" name="fixserif" value="fixserif">
 	<label for="fixserif">Fix Serif Font</label></span><br>
