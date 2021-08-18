@@ -18,7 +18,8 @@ window.paintmod.settings.defaults = {
 	ctrlscale: true,
 	fixserif: false,
 	hexcolor: true,
-	nomiter: false
+	nomiter: false,
+	customfonts: true
 }
 //All settings
 window.paintmod.settings.all = [
@@ -34,7 +35,8 @@ window.paintmod.settings.all = [
 	"ctrlscale",
 	"fixserif",
 	"hexcolor",
-	"nomiter"
+	"nomiter",
+	"customfonts"
 ]
 //Set settings
 try {
