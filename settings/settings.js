@@ -14,7 +14,7 @@ function save(nosaved) {
 		if (!nosaved) {
 			clearTimeout(saveTimeout);
 			$("#savebutton").textContent = "Saved!"
-			saveTimeout = setTimeout(function(){$("#").textContent = "Save"}, 1000)
+			saveTimeout = setTimeout(function(){$("#savebutton").textContent = "Save"}, 1000)
 		}
 	} catch(error) {
 		alert("Couldn't save, see console for more info")
