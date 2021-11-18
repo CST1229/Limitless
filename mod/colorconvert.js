@@ -19,7 +19,7 @@ function HSVtoRGB(h, s, v) {var r, g, b, i, f, p, q, t;
 //Function for converting RGB to HSV, thanks gist.github.com/mjackson/5311256
 //Slightly minified
 //Accepts RGB values from 0 to 255
-//Returns decimal RGB values from 0 to 100
+//Returns decimal HSV values from 0 to 100
 function RGBtoHSV(r, g, b) {
 	r /= 255, g /= 255, b /= 255;
 	var max = Math.max(r, g, b), min = Math.min(r, g, b); var h, s, v = max; var d = max - min;
