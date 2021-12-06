@@ -1,5 +1,5 @@
 //Adds color swatches to the paint editor
-//Code taken and modified from Customized (github.com/CodeGuy92/Customized)
+//Code taken and modified from Customized (github.com/LankyBox01/Customized)
 
 if (window.paintmod.settings.swatches==="true") {
 	
